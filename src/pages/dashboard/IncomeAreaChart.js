@@ -12,6 +12,7 @@ const areaChartOptions = {
   chart: {
     height: 450,
     type: 'area',
+    legend: { show: true },
     toolbar: {
       show: false
     }

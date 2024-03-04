@@ -75,11 +75,11 @@ const DashboardDefault = () => {
 
   return (
     <Grid container rowSpacing={4.5} columnSpacing={2.75}>
-      <Grid item xs={12} md={7} lg={8}>
+      <Grid item xs={12} md={7} lg={7}>
         <Grid container alignItems="center" justifyContent="space-between">
           <Grid item />
         </Grid>
-        <MainCard sx={{ mt: 2 }} content={false}>
+        <MainCard sx={{ mt: 1.5 }} content={false}>
           <Box sx={{ p: 3, pb: 0 }}>
             <Stack spacing={2}>
               <Typography variant="h6" color="textSecondary">
@@ -91,10 +91,16 @@ const DashboardDefault = () => {
           <MonthlyBarChart />
         </MainCard>
       </Grid>
-      <Grid item xs={12} md={5} lg={4}>
+      <Grid item xs={12} md={5} lg={5}>
         <Grid container alignItems="center" justifyContent="space-between"></Grid>
         <MainCard content={false} sx={{ mt: 1.5 }}>
           <Box sx={{ pt: 1, pr: 2 }}>
+            {/* <Stack spacing={2}>
+              <Typography variant="h6" color="textSecondary">
+                Average Handle Time
+              </Typography>
+              <Typography variant="h3">13m 19s</Typography>
+            </Stack> */}
             <IncomeAreaChart />
           </Box>
         </MainCard>
