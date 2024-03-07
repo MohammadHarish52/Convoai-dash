@@ -47,7 +47,7 @@ const TopBar = () => {
   return (
     <ul className="list" style={{ display: 'flex', listStyleType: 'none', gap: '16px', fontSize: '12px', flexWrap: 'wrap' }}>
       {headerItems.map((list) => (
-        <li key={list.id} style={{ display: 'flex', alignItems: 'end', justifyContent: 'center' }}>
+        <li key={list.id} style={{ display: 'flex', alignItems: 'flex-end', justifyContent: 'center' }}>
           <p style={{ marginRight: '4px' }}>{list.icon}</p>
           {list.text && <p style={{ color: '#8c8c8c' }}> {list.text} </p>}
           {list.subtext && <p>: {list.subtext}</p>}

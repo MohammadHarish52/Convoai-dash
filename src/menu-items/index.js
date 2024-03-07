@@ -1,7 +1,6 @@
 // project import
 
 import insights from './Insights';
-
 import conversation from './Conversation';
 import opera from './Opera';
 import coaching from './Coaching';
