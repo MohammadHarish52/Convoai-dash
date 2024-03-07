@@ -1,50 +1,11 @@
-// material-ui
-import { Box, useMediaQuery } from '@mui/material';
-// import { GithubOutlined } from '@ant-design/icons';
-
-// project import
-// import Search from './Search';
-// import Profile from './Profile';
-// import Notification from './Notification';
-// import MobileSection from './MobileSection';
-import Filter from './Filter';
-import Template from './Template';
-import UserSearch from './UserSearch';
-import Days from './Days';
-import Duration from './Duration';
-import Voicemail from './Voicemail';
-
 // ==============================|| HEADER - CONTENT ||============================== //
 
-const HeaderContent = () => {
-  const matchesXs = useMediaQuery((theme) => theme.breakpoints.down('md'));
+import TopBar from './TopBar';
 
+const HeaderContent = () => {
   return (
     <>
-      <Filter />
-      <Template />
-      <UserSearch />
-      <Days />
-      <Duration />
-      <Voicemail />
-      {/* {!matchesXs && <Search />} */}
-      {matchesXs && <Box sx={{ width: '100%', ml: 1 }} />}
-
-      {/* <IconButton
-        component={Link}
-        href="https://github.com/codedthemes/mantis-free-react-admin-template"
-        target="_blank"
-        disableRipple
-        color="secondary"
-        title="Download Free Version"
-        sx={{ color: 'text.primary', bgcolor: 'grey.100' }}
-      >
-        <GithubOutlined />
-      </IconButton>
-
-      <Notification />
-      {!matchesXs && <Profile />}
-      {matchesXs && <MobileSection />} */}
+      <TopBar />
     </>
   );
 };

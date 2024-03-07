@@ -10,7 +10,7 @@ const icons = {
 const question = {
   id: 'group-dashboard',
   title: 'Conversation',
-  icon: icons.LineChartOutlined,
+  icon: icons.MessageOutlined,
   type: 'group'
 };
 

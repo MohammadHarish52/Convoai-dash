@@ -1,8 +1,8 @@
-import { MessageOutlined } from '@ant-design/icons';
+import PeopleAltIcon from '@mui/icons-material/PeopleAlt';
 
 // icons
 const icons = {
-  MessageOutlined
+  PeopleAltIcon
 };
 
 // ==============================|| MENU ITEMS - DASHBOARD ||============================== //
@@ -10,7 +10,7 @@ const icons = {
 const admin = {
   id: 'group-dashboard',
   title: 'Admin',
-  icon: icons.LineChartOutlined,
+  icon: icons.PeopleAltIcon,
   type: 'group'
 };
 
