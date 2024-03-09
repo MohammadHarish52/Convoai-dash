@@ -8,9 +8,12 @@ import SimpleBar from 'components/third-party/SimpleBar';
 const DrawerContent = () => (
   <SimpleBar
     sx={{
+      backgroundColor: '#1e1f29',
       '& .simplebar-content': {
         display: 'flex',
-        flexDirection: 'column'
+        flexDirection: 'column',
+
+        height: '100%'
       }
     }}
   >

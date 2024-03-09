@@ -18,6 +18,7 @@ const RootStyle = styled(BrowserView)({
 // scroll bar wrapper
 const SimpleBarStyle = styled(SimpleBar)(({ theme }) => ({
   maxHeight: '100%',
+  backgroundColor: '#1e1f29',
   '& .simplebar-scrollbar': {
     '&:before': {
       backgroundColor: alpha(theme.palette.grey[500], 0.48)
@@ -42,7 +43,7 @@ const SimpleBarStyle = styled(SimpleBar)(({ theme }) => ({
 export default function SimpleBarScroll({ children, sx, ...other }) {
   return (
     <>
-      <RootStyle>
+      <RootStyle sx={{ backgroundColor: '#1e1f29' }}>
         <SimpleBarStyle timeout={500} clickOnTrack={false} sx={sx} {...other}>
           {children}
         </SimpleBarStyle>
